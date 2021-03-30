@@ -1,7 +1,10 @@
 kafka:
   brokerAddress: localhost:9092
-  topic: s1p.topic
-  fooTopic: s1p.fooTopic
+  #topic: s1p.topic
+  #fooTopic: s1p.fooTopic
+  # 改了原来作者设置的topic名称，因为我安装的kafka不允许有s1p（可能是没有创建group）
+  topic: s1ptopic
+  fooTopic: s1pfooTopic
 spring:
   jmx:
     enabled: false

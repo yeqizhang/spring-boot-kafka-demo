@@ -5,13 +5,13 @@
 
 #这个demo需要提前创建两个topic,或者自己创建两个,然后在配置文件中修改成自己的就可以了
 ===
-kafka-topics --zookeeper localhost:2181 --create --topic s1p.topic --partitions 5 --replication-factor 1
+kafka-topics --zookeeper localhost:2181 --create --topic s1ptopic --partitions 5 --replication-factor 1
 
-kafka-topics --zookeeper localhost:2181 --create --topic s1p.fooTopic --partitions 5 --replication-factor 1
+kafka-topics --zookeeper localhost:2181 --create --topic s1pfooTopic --partitions 5 --replication-factor 1
 
 #总共有9个例子
-1. 第一个例子介绍的是简单的向topic(s1p.topic)发送简单数据
-2. 第二个例子介绍的是通过注解 @KafkaListener 接受来自topic (s1p.topic)的消息
+1. 第一个例子介绍的只是简单的向topic(s1p.topic)发送简单数据
+2. 第二个例子介绍的是向topic(s1p.topic)发送简单数据 并 通过注解 @KafkaListener 接受来自topic (s1p.topic)的消息
 3. 第三个例子介绍的是通过@KafkaListener 指定使用那个partition处理某个topic的数据
 4. 第四个例子介绍的是指定偏移量(offset)的注解接受数据实例
 5. 第五个例子介绍的是将value数据 json序列化和反序列化操作,在这个例子中将CommonConfiguration替换为了JsonConfiguration

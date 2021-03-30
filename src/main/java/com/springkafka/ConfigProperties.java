@@ -17,11 +17,13 @@
 package com.springkafka;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
 /**
  * @author Gary Russell
  *
  */
+@Component
 @ConfigurationProperties(prefix = "kafka")
 public class ConfigProperties {
 

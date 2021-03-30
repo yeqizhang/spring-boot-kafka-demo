@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.kafka.core.KafkaTemplate;
 
 /**
- *
+ * 简单发送一条消息
  */
 @SpringBootApplication
 @Import({ CommonConfiguration.class, ConfigProperties.class })
